@@ -8,6 +8,7 @@ const FullLayout = lazy(() => import("../layouts/FullLayout.js"));
 
 const Item = lazy(() => import("../views/Item.js"));
 const About = lazy(() => import("../views/About.js"));
+const Brand = lazy(() => import("../views/Brand.js"));
 const Alerts = lazy(() => import("../views/ui/Alerts"));
 const Badges = lazy(() => import("../views/ui/Badges"));
 const Buttons = lazy(() => import("../views/ui/Buttons"));
@@ -27,6 +28,7 @@ const ThemeRoutes = [
       { path: "/", element: <Navigate to="/Item" /> },
       { path: "/item", exact: true, element: <Item /> },
       { path: "/about", exact: true, element: <About /> },
+      {path: "/brand", exact: true, element: <Brand />},
       { path: "/alerts", exact: true, element: <Alerts /> },
       { path: "/badges", exact: true, element: <Badges /> },
       { path: "/buttons", exact: true, element: <Buttons /> },

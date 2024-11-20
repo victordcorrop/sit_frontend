@@ -43,12 +43,12 @@ const navigation = [
     title: "Registrar Articulo",
     href: "/forms",
     icon: "bi bi-textarea-resize",
+  },
+  {
+    title: "Marcas",
+    href: "/brand",
+    icon: "bi bi-link",
   }
-  // {
-  //   title: "Breadcrumbs",
-  //   href: "/breadcrumbs",
-  //   icon: "bi bi-link",
-  // },
   // {
   //   title: "About",
   //   href: "/about",
