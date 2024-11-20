@@ -22,11 +22,11 @@ const Forms = () => {
         <Card>
           <CardTitle tag="h6" className="border-bottom p-3 mb-0">
             <i className="bi bi-bell me-2"> </i>
-            Form Example
+            Registro de articulo
           </CardTitle>
           <CardBody>
             <Form>
-              <FormGroup>
+              {/* <FormGroup>
                 <Label for="exampleEmail">Email</Label>
                 <Input
                   id="exampleEmail"
@@ -43,18 +43,34 @@ const Forms = () => {
                   placeholder="password placeholder"
                   type="password"
                 />
-              </FormGroup>
+              </FormGroup> */}
               <FormGroup>
-                <Label for="exampleSelect">Select</Label>
+                <Label for="exampleSelect">tipo de Articulo</Label>
                 <Input id="exampleSelect" name="select" type="select">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
+                  <option>PC</option>
+                  <option>Teclado</option>
+                  <option>Raton</option>
+                  <option>Monitor</option>
+                  <option>Router</option>
                 </Input>
               </FormGroup>
               <FormGroup>
+                <Label for="exampleSelect">Marca</Label>
+                <Input id="exampleSelect" name="select" type="select">
+                  <option>Marca 1</option>
+                  <option>Marca 2</option>                  
+                </Input>
+              </FormGroup>
+              <FormGroup>
+                <Label for="exampleSelect">Modelo</Label>
+                <Input id="exampleSelect" name="select" type="select">
+                  <option>Modelo_1</option>
+                  <option>Modelo_1</option>
+                  <option>Modelo_3</option>
+                  
+                </Input>
+              </FormGroup>
+              {/* <FormGroup>
                 <Label for="exampleSelectMulti">Select Multiple</Label>
                 <Input
                   id="exampleSelectMulti"
@@ -68,8 +84,8 @@ const Forms = () => {
                   <option>4</option>
                   <option>5</option>
                 </Input>
-              </FormGroup>
-              <FormGroup>
+              </FormGroup> */}
+              {/* <FormGroup>
                 <Label for="exampleText">Text Area</Label>
                 <Input id="exampleText" name="text" type="textarea" />
               </FormGroup>
@@ -104,7 +120,7 @@ const Forms = () => {
               </FormGroup>
               <FormGroup check>
                 <Input type="checkbox" /> <Label check>Check me out</Label>
-              </FormGroup>
+              </FormGroup> */}
               <Button>Submit</Button>
             </Form>
           </CardBody>
