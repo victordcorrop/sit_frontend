@@ -48,12 +48,12 @@ const navigation = [
     title: "Marcas",
     href: "/brand",
     icon: "bi bi-link",
+  },
+  {
+    title: "Modelo",
+    href: "/model",
+    icon: "bi bi-people",
   }
-  // {
-  //   title: "About",
-  //   href: "/about",
-  //   icon: "bi bi-people",
-  // },
 ];
 
 const Sidebar = () => {
