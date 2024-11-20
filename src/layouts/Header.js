@@ -64,8 +64,8 @@ const Header = () => {
       <Collapse navbar isOpen={isOpen}>
         <Nav className="me-auto" navbar>
           <NavItem>
-            <Link to="/starter" className="nav-link">
-              Starter
+            <Link to="/item" className="nav-link">
+               Articulo  {/*ruta en ingles boton en español */}
             </Link>
           </NavItem>
           <NavItem>
@@ -73,7 +73,7 @@ const Header = () => {
               About
             </Link>
           </NavItem>
-          <UncontrolledDropdown inNavbar nav>
+          {/* <UncontrolledDropdown inNavbar nav>
             <DropdownToggle caret nav>
               DD Menu
             </DropdownToggle>
@@ -83,7 +83,7 @@ const Header = () => {
               <DropdownItem divider />
               <DropdownItem>Reset</DropdownItem>
             </DropdownMenu>
-          </UncontrolledDropdown>
+          </UncontrolledDropdown>  de ejmeplo por si se necesita */ }
         </Nav>
         <Dropdown isOpen={dropdownOpen} toggle={toggle}>
           <DropdownToggle color="transparent">

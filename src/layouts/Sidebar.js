@@ -6,7 +6,7 @@ import probg from "../assets/images/bg/download.jpg";
 const navigation = [
   {
     title: "Dashboard",
-    href: "/starter",
+    href: "/item",
     icon: "bi bi-speedometer2",
   },
   // {
