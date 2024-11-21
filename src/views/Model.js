@@ -36,10 +36,10 @@ const Model = () => {
                   <option>Marca 2</option>
                 </Input>
               </FormGroup>
-              
+
               <FormGroup>
                 <Label for="modelo">Modelo</Label>
-                <Input id="model" name="model" type="text" placeholder="Ingrese el modelo que quiera registrar"/>
+                <Input id="modelo" name="modelo" type="text" placeholder="Ingrese el modelo que quiera registrar"/>
               </FormGroup>
               
 
