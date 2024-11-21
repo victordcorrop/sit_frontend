@@ -9,103 +9,108 @@ import {
   FormGroup,
   Label,
   Input,
-  FormText,
 } from "reactstrap";
 
 const Forms = () => {
   return (
     <Row>
       <Col>
-        {/* --------------------------------------------------------------------------------*/}
-        {/* Card-1*/}
-        {/* --------------------------------------------------------------------------------*/}
         <Card>
           <CardTitle tag="h6" className="border-bottom p-3 mb-0">
             <i className="bi bi-bell me-2"> </i>
-            Form Example
+            Registro de articulo
           </CardTitle>
           <CardBody>
             <Form>
               <FormGroup>
-                <Label for="exampleEmail">Email</Label>
-                <Input
-                  id="exampleEmail"
-                  name="email"
-                  placeholder="with a placeholder"
-                  type="email"
-                />
-              </FormGroup>
-              <FormGroup>
-                <Label for="examplePassword">Password</Label>
-                <Input
-                  id="examplePassword"
-                  name="password"
-                  placeholder="password placeholder"
-                  type="password"
-                />
-              </FormGroup>
-              <FormGroup>
-                <Label for="exampleSelect">Select</Label>
-                <Input id="exampleSelect" name="select" type="select">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
+                <Label for="tipoArticulo">Tipo de Artículo</Label>
+                <Input id="tipoArticulo" name="tipoArticulo" type="select">
+                  <option>PC</option>
+                  <option>Teclado</option>
+                  <option>Ratón</option>
+                  <option>Monitor</option>
+                  <option>Router</option>
                 </Input>
               </FormGroup>
               <FormGroup>
-                <Label for="exampleSelectMulti">Select Multiple</Label>
-                <Input
-                  id="exampleSelectMulti"
-                  multiple
-                  name="selectMulti"
-                  type="select"
-                >
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
+                <Label for="marca">Marca</Label>
+                <Input id="marca" name="marca" type="select">
+                  <option>Marca 1</option>
+                  <option>Marca 2</option>
                 </Input>
               </FormGroup>
               <FormGroup>
-                <Label for="exampleText">Text Area</Label>
-                <Input id="exampleText" name="text" type="textarea" />
+                <Label for="modelo">Modelo</Label>
+                <Input id="modelo" name="modelo" type="select">
+                  <option>Modelo_1</option>
+                  <option>Modelo_2</option>
+                  <option>Modelo_3</option>
+                </Input>
               </FormGroup>
+            
               <FormGroup>
-                <Label for="exampleFile">File</Label>
-                <Input id="exampleFile" name="file" type="file" />
-                <FormText>
-                  This is some placeholder block-level help text for the above
-                  input. It's a bit lighter and easily wraps to a new line.
-                </FormText>
+                <Label for="serial">Serial</Label>
+                <Input id="serial" name="serial" type="text" placeholder="Ingrese el serial del artículo"/>
               </FormGroup>
-              <FormGroup tag="fieldset">
-                <legend>Radio Buttons</legend>
-                <FormGroup check>
-                  <Input name="radio1" type="radio" />{" "}
-                  <Label check>
-                    Option one is this and that—be sure to include why it's
-                    great
-                  </Label>
-                </FormGroup>
-                <FormGroup check>
-                  <Input name="radio1" type="radio" />{" "}
-                  <Label check>
-                    Option two can be something else and selecting it will
-                    deselect option one
-                  </Label>
-                </FormGroup>
-                <FormGroup check disabled>
-                  <Input disabled name="radio1" type="radio" />{" "}
-                  <Label check>Option three is disabled</Label>
-                </FormGroup>
+              
+              <FormGroup>
+                <Label for="num_b">Numero de bien</Label>
+                <Input id="num_b" name="num_b" type="text" placeholder="Ingrese el numero de bien del artículo"/>
               </FormGroup>
-              <FormGroup check>
-                <Input type="checkbox" /> <Label check>Check me out</Label>
+
+              <FormGroup>
+                <Label for="observaciones">Observaciones</Label>
+                <Input id="observaciones" name="observaciones" type="text" placeholder="Ingrese Ingrese una observacion del articulo"/>
+
               </FormGroup>
-              <Button>Submit</Button>
+
+              <FormGroup>
+                <Label for="estatus">Estatus</Label>
+                <Input id="estatus" name="estatus" type="select">
+                  <option>Inactivo</option>
+                  <option>Activo</option>
+                </Input>
+              </FormGroup>
+              
+              <FormGroup>
+                <Label for="sistema_operativo">Sistema operativo</Label>
+                <Input id="sistema_operativo" name="sistema_operativo" type="select">
+                  <option>Windows</option>
+                  <option>Linux</option>
+                  <option>Mac</option>
+                </Input>
+              </FormGroup>
+
+              <FormGroup>
+                <Label for="color">Color</Label>
+                <Input id="color" name="color" type="text" placeholder="Ingrese el color del articulo"/>
+
+              </FormGroup>
+
+              <FormGroup>
+                <Label for="almacenamiento">Almacenamiento</Label>
+                <Input id="almacenamiento" name="almacenamiento" type="text" placeholder="Ingrese el almacenamiento del articulo"/>
+
+              </FormGroup>
+
+              <FormGroup>
+                <Label for="procesador">Procesador</Label>
+                <Input id="procesador" name="procesador" type="text" placeholder="Ingrese el procesador del articulo"/>
+
+              </FormGroup>
+
+              <FormGroup>
+                <Label for="memoria_ram">Memoria ram</Label>
+                <Input id="memoria_ram" name="memoria_ram" type="text" placeholder="Ingrese la memoria ram del articulo"/>
+
+              </FormGroup>
+
+              <FormGroup>
+                <Label for="ghz">GHZ</Label>
+                <Input id="ghz" name="ghz" type="text" placeholder="Ingrese los ghz del articulo"/>
+
+              </FormGroup>
+              <Button color="info">Submit</Button>
             </Form>
           </CardBody>
         </Card>

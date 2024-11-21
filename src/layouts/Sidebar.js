@@ -6,7 +6,7 @@ import probg from "../assets/images/bg/download.jpg";
 const navigation = [
   {
     title: "Dashboard",
-    href: "/starter",
+    href: "/item",
     icon: "bi bi-speedometer2",
   },
   // {
@@ -39,21 +39,22 @@ const navigation = [
   //   href: "/table",
   //   icon: "bi bi-layout-split",
   // },
-  // {
-  //   title: "Forms",
-  //   href: "/forms",
-  //   icon: "bi bi-textarea-resize",
-  // },
-  // {
-  //   title: "Breadcrumbs",
-  //   href: "/breadcrumbs",
-  //   icon: "bi bi-link",
-  // },
-  // {
-  //   title: "About",
-  //   href: "/about",
-  //   icon: "bi bi-people",
-  // },
+  {
+    title: "Registrar Articulo",
+    href: "/forms",
+    icon: "bi bi-textarea-resize",
+  },
+  {
+    title: "Marcas",
+    href: "/brand",
+    icon: "bi bi-link",
+  },
+  {
+    title: "Modelo",
+    href: "/model",
+    icon: "bi bi-people",
+  }
+  
 ];
 
 const Sidebar = () => {
