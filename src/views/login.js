@@ -16,7 +16,7 @@ import {
       <div className="bg-primary vh-100">
       <Row className="justify-content-center bg-primary align-items-center vh-100" > 
       <Col md={4} >
-        <Card className="border border-primary shadow-lg"> 
+        <Card className="border border-primary shadow-sm"> 
           <CardTitle tag="h5" className="border-bottom p-3 mb-0 text-center"> 
             Inicio de sesion
           </CardTitle>
@@ -39,7 +39,7 @@ import {
               </div>
 
               <div className="d-flex justify-content-center">
-                <Button color="info">Entrar</Button>
+                <Button color="primary">Entrar</Button>
               </div>
             </Form>
           </CardBody>
