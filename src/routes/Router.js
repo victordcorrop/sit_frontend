@@ -5,7 +5,7 @@ import { Navigate } from "react-router-dom";
 const FullLayout = lazy(() => import("../layouts/FullLayout.js"));
 
 /***** Pages ****/
-
+const Login = lazy(() => import("../views/login.js"));
 const Item = lazy(() => import("../views/Item.js"));
 const About = lazy(() => import("../views/About.js"));
 const Brand = lazy(() => import("../views/Brand.js"));
@@ -22,6 +22,7 @@ const Breadcrumbs = lazy(() => import("../views/ui/Breadcrumbs"));
 /*****Routes******/
 
 const ThemeRoutes = [
+  { path: "/login", exact: true, element: <Login /> },
   {
     path: "/",
     element: <FullLayout />,
