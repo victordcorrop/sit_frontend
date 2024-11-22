@@ -20,8 +20,8 @@ import {
 
 const Model = () => {
   return (
-    <Row>
-      <Col>
+    <Row className="justify-content-md-center">
+      <Col  md={6} >
         <Card>
           <CardTitle tag="h6" className="border-bottom p-3 mb-0">
             <i className="bi bi-bell me-2"> </i>
@@ -42,7 +42,6 @@ const Model = () => {
                 <Input id="modelo" name="modelo" type="text" placeholder="Ingrese el modelo que quiera registrar"/>
               </FormGroup>
               
-
               <Button color="info">Submit</Button>
             </Form>
           </CardBody>
