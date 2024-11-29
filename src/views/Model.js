@@ -42,7 +42,7 @@ const Model = () => {
                 <Input id="modelo" name="modelo" type="text" placeholder="Ingrese el modelo que quiera registrar"/>
               </FormGroup>
               
-              <Button color="info">Submit</Button>
+              <Button color="info">Registrar</Button>
             </Form>
           </CardBody>
         </Card>

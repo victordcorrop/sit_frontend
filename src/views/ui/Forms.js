@@ -110,7 +110,7 @@ const Forms = () => {
                 <Input id="ghz" name="ghz" type="text" placeholder="Ingrese los ghz del articulo"/>
 
               </FormGroup>
-              <Button color="info">Submit</Button>
+              <Button color="info">Registrar</Button>
             </Form>
           </CardBody>
         </Card>

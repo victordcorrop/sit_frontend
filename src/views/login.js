@@ -24,13 +24,18 @@ import {
             <Form>
         
               <FormGroup>
-                <Label for="usuario">Usuario</Label>
-                <Input id="usuario" name="usuario" type="text" placeholder="Ingrese su usuario"/>
+                <Label for="cedula">Cedula</Label>
+                <Input id="cedula" name="cedula" type="text" placeholder="Ingrese su cedula"/>
               </FormGroup>
               <FormGroup>
                 <Label for="contraseña">Contraseña</Label>
                 <Input id="contraseña" name="contraseña" type="text" placeholder="Ingrese su contraseña"/>
               </FormGroup>
+              <div className="text-center mb-3">
+                <a href="" className="text-decoration-none text-primary">
+                  Resgristrar usuario
+                </a>
+              </div>
 
               <div className="text-center mb-3">
                 <a href="" className="text-decoration-none text-primary">

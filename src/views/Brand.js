@@ -1,17 +1,35 @@
-import {
-  Card,
-  Row,
-  Col,
-  CardTitle,
-  CardBody,
-  Button,
-  Form,
-  FormGroup,
-  Label,
-  Input,
-} from "reactstrap";
+import React, { useState } from "react";
+import { Card, Row, Col, CardTitle, CardBody, Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 const Brand = () => {
+  const [marca, setMarca] = useState("");
+
+  const registrarMarca = async (e) => {
+    
+    try {
+     
+      const res = await fetch("http://localhost:3000/marca", {
+        method: "POST",
+       
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ marca }), 
+      });
+      
+      const data = await res.json();
+    
+      alert(data.message);
+      
+      if (res.status === 201) setMarca("");
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Error al crear la marca");
+      
+      
+    }
+    
+  };
+
+
   return (
     <Row className="justify-content-md-center">
       <Col md={6}>
@@ -21,15 +39,19 @@ const Brand = () => {
             Registro de Marca
           </CardTitle>
           <CardBody>
-            <Form>
-        
+            <Form onSubmit={registrarMarca}>
               <FormGroup>
                 <Label for="Marca">Marca</Label>
-                <Input id="Marca" name="Marca" type="text" placeholder="Ingrese la marca que quiera registrar"/>
+                <Input
+                  id="Marca"
+                  name="Marca"
+                  type="text"
+                  placeholder="Ingrese la marca"
+                  value={marca}
+                  onChange={(e) => setMarca(e.target.value)}
+                />
               </FormGroup>
-              
-
-              <Button color="info">Submit</Button>
+              <Button color="info" type="submit">Registrar</Button>
             </Form>
           </CardBody>
         </Card>
@@ -38,11 +60,4 @@ const Brand = () => {
   );
 };
 
-
-//  const  Brand =() =>{
-//   return (
-//     <h1>Marcas</h1>
-//   );
-// }
-
-export default Brand
+export default Brand;
