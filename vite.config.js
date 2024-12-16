@@ -26,7 +26,7 @@ export default defineConfig({
                         build.onLoad(
                             { filter: /src\\.*\.js$/ },
                             async (args) => ({
-                                loader: 'jsx',
+                                loader:{ '.js':'jsx'},
                                 contents: await fs.readFile(args.path, 'utf8'),
                             })
                         );
@@ -36,5 +36,5 @@ export default defineConfig({
         },
     },
 
-    plugins: [react(),svgr()],
+    plugins: [react({include:/\.(js|jsx|ts|tsx)$/}),svgr()],
 });
