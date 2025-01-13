@@ -42,7 +42,9 @@ const Model = () => {
                 <Input id="modelo" name="modelo" type="text" placeholder="Ingrese el modelo que quiera registrar"/>
               </FormGroup>
               
-              <Button color="info">Registrar</Button>
+              <div className=" d-flex  justify-content-center">
+                <Button className="mx-8" color="primary" type="submit">Registrar</Button>
+              </div>
             </Form>
           </CardBody>
         </Card>

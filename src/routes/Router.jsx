@@ -16,7 +16,7 @@ const Buttons = lazy(() => import("../views/ui/Buttons.jsx"));
 const Cards = lazy(() => import("../views/ui/Cards.jsx"));
 const Grid = lazy(() => import("../views/ui/Grid.jsx"));
 const Tables = lazy(() => import("../views/ui/Tables.jsx"));
-const Forms = lazy(() => import("../views/ui/Forms.jsx"));
+const Forms = lazy(() => import("../views/Forms.jsx"));
 const Breadcrumbs = lazy(() => import("../views/ui/Breadcrumbs.jsx"));
 
 /*****Routes******/
